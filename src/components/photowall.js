@@ -3,8 +3,8 @@ import Photo from "./photo";
 
 class Photowall extends Component {
   render() {
-    return <div>
-        {this.props.posts.map(post, index) => <Photo key= {index} post={post}/>)}
+    return <div className="photo-grid">
+        {this.props.posts.map((post, index) => <Photo key= {index} post={post}/>)}
     </div>
   }
 }

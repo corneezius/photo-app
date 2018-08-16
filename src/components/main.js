@@ -24,7 +24,7 @@ class Main extends Component {
   render() {
     return <div>
               <h1><Title title= {"Photowall"} /></h1>
-              <PhotoWall posts={posts}/>
+              <Photowall posts={posts}/>
             </div>
   }
 }

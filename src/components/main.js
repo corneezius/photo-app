@@ -2,10 +2,13 @@ import React, { Component} from "react";
 import ReactDOM from "react-dom";
 import Title from "./title";
 
+
+
+
 class Main extends Component {
   render() {
     return <div>
-              <Title title= {"photowall"} />
+              <h1><Title title= {"Photowall"} /></h1>
             </div>
   }
 }

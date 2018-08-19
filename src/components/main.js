@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Title from "./title";
 import Photowall from "./photowall";
 import AddPhoto from "./addphoto";
+import {Route} from "react-router-dom"
 
 class Main extends Component {
   constructor() {
@@ -26,7 +27,6 @@ class Main extends Component {
      screen: "photos"
     }
     this.removePhoto = this.removePhoto.bind(this);
-    this.navigate = this.navigate.bind(this);
   }
 
 
@@ -37,32 +37,19 @@ class Main extends Component {
     }))
   }
 
-  navigate() {
-    this.setState({
-      screen: "AddPhoto"
-    })
-  }
 
   render() {
-    return  <div>
+    return  (<div>
+              <Route exact path = "/" render={() => (
+                <div>
+                  <h1><Title title= {"Photowall"} /></h1>
+                  <Photowall posts={this.state.posts} onRemovePhoto= {this.removePhoto} onNavigate = {this.navigate}/>
+                </div>
+              )}/>
 
-      {
-            this.state.screen === "photos" && (
-              <div>
-                <h1><Title title= {"Photowall"} /></h1>
-                <Photowall posts={this.state.posts} onRemovePhoto= {this.removePhoto} onNavigate = {this.navigate}/>
-              </div>
-            )
-      }
-      {
-            this.state.screen === "AddPhoto" && (
-              <div>
-                <AddPhoto onNavigate = {this.navigate} />
-              </div>
-            )
-      }
+            <Route path = "/AddPhoto" component = {AddPhoto}/>
         </div>
-  }
+  )}
 }
 
 export default Main;

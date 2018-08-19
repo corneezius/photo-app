@@ -1,4 +1,5 @@
 import React, { Component} from "react";
+import ReactDOM from "react-dom";
 import Title from "./title";
 import Photowall from "./photowall";
 import AddPhoto from "./addphoto";

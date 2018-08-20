@@ -48,7 +48,7 @@ class Main extends Component {
     return  (<div>
               <Route exact path = "/" render={() => (
                 <div>
-                  <h1><Title title= {"Photowall"} /></h1>
+                  <h1><Title title= {"PushforGorilla"} /></h1>
                   <Photowall posts={this.state.posts} onRemovePhoto= {this.removePhoto} onNavigate = {this.navigate}/>
                 </div>
               )}/>

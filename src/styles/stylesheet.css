@@ -45,6 +45,11 @@ button {
   flex-wrap: wrap;
 }
 
+h1 a {
+  color:black;
+  text-decoration:none;
+}
+
 .figure {
   flex-basis:calc(33.333% - 4rem);
   border: 1px solid black;

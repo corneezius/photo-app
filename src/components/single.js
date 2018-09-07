@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import Photo from "./photo"
+import Comments from "./comments"
 
 class Single extends Component {
   render() {
@@ -8,6 +9,7 @@ class Single extends Component {
     const post = posts.find((post) => post.id === id)
     return <div className="single-photo">
         <Photo post={post}/>
+        <Comments />
     </div>
   }
 }

@@ -12,8 +12,6 @@ class Main extends Component {
     super()
   }
 
-
-
   render() {
 
     return  (

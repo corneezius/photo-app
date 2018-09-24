@@ -22,6 +22,25 @@ export function startLoadingPost() {
   }
 }
 
+export function startRemovingPosts(index, id ) {
+  return (dispatch) => {
+    return database.ref(`posts/${id}`).remove().then(() => {
+      dispatch(removePost(index))
+    })
+  }
+}
+
+export function startAddingComment(comment, postId) {
+  return (dispatch) => {
+    return database.ref("comments/"+postId).push(comment).then(() => {
+      dispatch(addComment(comment,postId))
+    }).catch((error) => {
+      console.log(error)
+    })
+  }
+}
+
+
 
 export function removePost(index) {
   return {
@@ -49,13 +68,5 @@ export function addPost(post) {
     return {
       type:"LOAD_POSTS",
       posts
-    }
-  }
-
-  export function startRemovingPosts(index, id ) {
-    return (dispatch) => {
-      return database.ref(`posts/${id}`).remove().then() => {
-        dispatch(removePost(index))
-      })
     }
   }

@@ -1,5 +1,6 @@
 import * as firebase from "firebase";
 
+// Initialize Firebase
 var config = {
   apiKey: "AIzaSyD8YF4ceTQN1tg_eUQfzai6P0zCZymPiDU",
   authDomain: "fluttr-776da.firebaseapp.com",

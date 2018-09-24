@@ -1,4 +1,4 @@
-##To run this Project:
+# To run this Project:
 
 1. clone into your terminal
 

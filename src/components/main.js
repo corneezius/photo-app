@@ -8,8 +8,9 @@ import {removePost} from "../redux/actions"
 import Single from "./single"
 
 class Main extends Component {
-  constructor() {
-    super()
+
+  componentDidMount() {
+    this.props.startLoadingPost()
   }
 
   render() {

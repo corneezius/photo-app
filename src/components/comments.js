@@ -15,10 +15,11 @@ class Comments extends Component {
   render() {
     console.log(this.props.comments)
     return <div className="comment">
+
     {
       this.props.comments.map((comment, index)=> {
         return (
-          <p key={index}> {comment}</p>
+          <p key={index}>{comment}</p>
         )
       })
     }

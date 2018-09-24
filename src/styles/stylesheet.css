@@ -111,6 +111,21 @@ h1 a {
 button:hover {
   border:blue;
 }
+button, .button {
+	border: 2px solid #f2f2f2;
+	background: none;
+	flex-basis: 48%;
+	display: inline-block;
+	line-height: 2;
+	text-decoration: none;
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+	color: red;
+	transition: all 0.2s;
+	box-sizing: padding-box;
+
+}
 
 .figure .single-photo {
     flex-basis: calc(33.333% - 4rem);
@@ -155,7 +170,7 @@ button:hover {
 .comment{
     width: 100%
 }
-.comment p {
+.comment ol li {
     border-bottom: 1px solid #d3d3d3;
     padding: 0.5rem 0;
 }
@@ -171,13 +186,13 @@ button:hover {
 }
 
 .speech-bubble {
-    background: url("https://d30y9cdsu7xlg0.cloudfront.net/png/51904-200.png") center no-repeat;
-    background-size: contain;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
-    border: none;
-    position: relative;
+	background: url("https://d30y9cdsu7xlg0.cloudfront.net/png/51904-200.png") center no-repeat;
+	background-size: contain;
+	padding: 10px;
+	margin: 5px;
+	display: inline-block;
+	border: none;
+	position: relative;
 }
 
 

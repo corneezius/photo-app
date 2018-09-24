@@ -51,3 +51,11 @@ export function addPost(post) {
       posts
     }
   }
+
+  export function startRemovingPosts(index, id ) {
+    return (dispatch) => {
+      return database.ref(`posts/${id}`).remove().then() => {
+        dispatch(removePost(index))
+      })
+    }
+  }

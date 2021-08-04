@@ -4,7 +4,6 @@
 
 2. Navigate into the directory
 
-3. NPM install
+3. yarn to install packages
 
-4. NPM Start
-
+4. Yarn start to run

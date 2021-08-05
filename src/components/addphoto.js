@@ -81,7 +81,6 @@ function AddPhoto(props) {
       <div>
         <div className="form">
           <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="link" name="link" />
             <input type="text" placeholder="description" name="description" />
             <ImgCrop quality={0.2} aspect={5 / 4} rotate>
               <Upload

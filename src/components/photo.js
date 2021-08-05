@@ -7,7 +7,7 @@ function Photo(props) {
     return<figure className="figure">
             <Link to={`/single/${post.id}`}>
             {/* <img src={require('../assets/placeholder2.jpeg')} /> */}
-              <img className="photo" src={require('../assets/placeholder2.jpeg')} alt={post.description} />
+              <img className="photo" src={post.imageLink} alt={post.description} />
             </Link>
             <figcaption> <p>{post.description} </p></figcaption>
             <div className="button-container">

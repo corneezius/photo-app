@@ -31,7 +31,6 @@ function AddPhoto(props) {
 
   async function handleSubmit(event) {
     event.preventDefault()
-    const imageLink = event.target.elements.link.value
     const description = event.target.elements.description.value
     let element = fileList[0]
     if(element){

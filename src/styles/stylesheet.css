@@ -213,3 +213,33 @@ button, .button {
     justify-content: center;
     font-size: 28pt;
 }
+
+.title-text {
+  font-family:permanent marker !important;
+}
+
+figure.figure {
+  -ms-flex-preferred-size: calc(33.333% - 4rem);
+    flex-basis: calc(33.333% - 4rem);
+    border: 1px solid #d4d4d4;
+    padding: 2rem;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+    border-radius:15px;
+}
+
+figcaption {
+  font-family:permanent marker;
+  text-align:center;
+}
+
+div.comment-count {
+  font-family:arial;
+}
+
+.remove-button {
+  background:red !important;
+  color:white !important;
+  border-radius:10px;
+}
